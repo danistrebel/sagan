@@ -1,10 +1,10 @@
 # Track Plan: Refactor and Update Project Dependencies
 
 ## Phase 1: Build System Upgrade
-- [ ] Task: Upgrade Gradle Wrapper
-    - [ ] Subtask: Identify the target Gradle version compatible with the current and target Spring Boot versions.
-    - [ ] Subtask: Execute the Gradle wrapper update command.
-    - [ ] Subtask: Verify the build runs with the new wrapper (`./gradlew clean build`).
+- [x] Task: Upgrade Gradle Wrapper c0edca4
+    - [x] Subtask: Identify the target Gradle version compatible with the current and target Spring Boot versions.
+    - [x] Subtask: Execute the Gradle wrapper update command.
+    - [x] Subtask: Verify the build runs with the new wrapper (`./gradlew clean build`).
 - [ ] Task: Update Gradle Plugins
     - [ ] Subtask: Check for updates to `org.springframework.boot`, `io.spring.dependency-management`, and `org.asciidoctor.jvm.convert` plugins.
     - [ ] Subtask: Apply updates in `build.gradle` files.
