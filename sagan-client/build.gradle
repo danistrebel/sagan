@@ -1,13 +1,18 @@
 import org.gradle.api.tasks.PathSensitivity
 
 plugins {
-	id 'com.github.node-gradle.node' version '3.1.1'
+	id 'com.github.node-gradle.node' version '7.1.0'
 	id 'java'
 }
 
+java {
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
+}
+
 node {
-	version = '14.4.0'
-	npmVersion = '6.14.4'
+	version = '18.17.0' // Updating node version to something more recent as well
+	npmVersion = '9.6.7'
 	download = true
 }
 
