@@ -1,6 +1,6 @@
 # Track Plan: Refactor and Update Project Dependencies
 
-## Phase 1: Build System Upgrade
+## Phase 1: Build System Upgrade [checkpoint: 8a3a1e7]
 - [x] Task: Upgrade Gradle Wrapper c0edca4
     - [x] Subtask: Identify the target Gradle version compatible with the current and target Spring Boot versions.
     - [x] Subtask: Execute the Gradle wrapper update command.
