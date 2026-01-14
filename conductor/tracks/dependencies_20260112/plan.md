@@ -11,7 +11,7 @@
     - [x] Subtask: Verify build stability.
 
 ## Phase 2: Core Framework Upgrade
-- [ ] Task: Upgrade Spring Boot Version
+- [~] Task: Upgrade Spring Boot Version
     - [ ] Subtask: Update the Spring Boot version in the root `build.gradle` or `settings.gradle`.
     - [ ] Subtask: Resolve any immediate dependency conflicts reported by Gradle.
     - [ ] Subtask: Fix compilation errors resulting from removed or deprecated APIs.

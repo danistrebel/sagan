@@ -1,11 +1,12 @@
 package sagan.site.blog;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.hibernate.annotations.Type;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 import org.springframework.util.StringUtils;
 import sagan.site.team.MemberProfile;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashSet;
@@ -39,15 +40,15 @@ public class Post {
     private PostFormat format;
 
     @Column(nullable = false)
-    @Type(type = "text")
+    @JdbcTypeCode(SqlTypes.LONGVARCHAR)
     private String rawContent;
 
     @Column(nullable = false)
-    @Type(type = "text")
+    @JdbcTypeCode(SqlTypes.LONGVARCHAR)
     private String renderedContent;
 
     @Column(nullable = false)
-    @Type(type = "text")
+    @JdbcTypeCode(SqlTypes.LONGVARCHAR)
     private String renderedSummary;
 
     @Column(nullable = false)

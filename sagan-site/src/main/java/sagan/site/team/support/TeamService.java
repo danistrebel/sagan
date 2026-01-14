@@ -5,7 +5,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.List;
 import java.util.Optional;
 
-import javax.xml.bind.DatatypeConverter;
+import java.util.HexFormat;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -94,7 +94,7 @@ public class TeamService {
 			try {
 				MessageDigest digest = MessageDigest.getInstance("MD5");
 				digest.update(profile.getGravatarEmail().getBytes());
-				String hashedEmail = DatatypeConverter.printHexBinary(digest.digest());
+				String hashedEmail = HexFormat.of().formatHex(digest.digest());
             	profile.setAvatarUrl(String.format("https://gravatar.com/avatar/%s", hashedEmail.toLowerCase()));
 			}
 			catch (NoSuchAlgorithmException e) {

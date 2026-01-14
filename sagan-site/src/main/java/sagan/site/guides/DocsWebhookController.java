@@ -9,7 +9,7 @@ import java.util.Map;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
-import javax.xml.bind.DatatypeConverter;
+import java.util.HexFormat;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.logging.Log;
@@ -108,7 +108,7 @@ class DocsWebhookController {
 
 	private void verifyHmacSignature(String message, String signature) {
 		byte[] sig = hmac.doFinal(message.getBytes(CHARSET));
-		String computedSignature = "sha1=" + DatatypeConverter.printHexBinary(sig);
+		String computedSignature = "sha1=" + HexFormat.of().formatHex(sig);
 		if (!computedSignature.equalsIgnoreCase(signature)) {
 			throw new WebhookAuthenticationException(computedSignature, signature);
 		}

@@ -1,16 +1,15 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '2.5.14'
-	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
-	id 'org.asciidoctor.jvm.convert' version '3.3.2'
-	id 'com.gorylenko.gradle-git-properties' version '2.3.1'
+	id 'org.springframework.boot' version '3.2.0'
+	id 'io.spring.dependency-management' version '1.1.7'
+	id 'org.asciidoctor.jvm.convert' version '4.0.5'
+	id 'com.gorylenko.gradle-git-properties' version '2.5.4'
 }
-
 apply from: "${rootDir}/gradle/publications.gradle"
 
 group = 'io.spring.sagan'
 version = "1.0.0-SNAPSHOT"
-sourceCompatibility = '11'
+sourceCompatibility = '17'
 
 ext {
 	snippetsDir = file('build/generated-snippets')
@@ -37,7 +36,7 @@ dependencies {
 	implementation project(':sagan-client')
 
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.hibernate:hibernate-java8'
+	implementation 'org.hibernate.orm:hibernate-core'
 	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
@@ -58,12 +57,11 @@ dependencies {
 	// for use in generating blog atom feeds
 	implementation 'com.rometools:rome:1.18.0'
 	// for use in serving redirects; see urlrewrite.xml
-	implementation 'org.tuckey:urlrewritefilter:4.0.4'
+	implementation 'org.tuckey:urlrewritefilter:5.1.3'
 
 	// Thymeleaf is used as the template engine for serving HTML
 	implementation "org.springframework.boot:spring-boot-starter-thymeleaf"
-	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
-	implementation 'org.thymeleaf.extras:thymeleaf-extras-java8time'
+	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
 	implementation 'com.github.mxab.thymeleaf.extras:thymeleaf-extras-data-attribute'
 
 	// for CloudFoundry service binding
@@ -108,6 +106,7 @@ bootJar {
 
 task stubsJar(type: Jar) {
 	archiveClassifier.set("stubs")
+	dependsOn 'compileJava', 'test'
 	into('/sagan/site/webapi/') {
 		include('**/*Metadata.*')
 		from("${project.projectDir}/src/main/java/sagan/site/webapi/")
