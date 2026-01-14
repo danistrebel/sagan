@@ -5,10 +5,10 @@
     - [x] Subtask: Identify the target Gradle version compatible with the current and target Spring Boot versions.
     - [x] Subtask: Execute the Gradle wrapper update command.
     - [x] Subtask: Verify the build runs with the new wrapper (`./gradlew clean build`).
-- [ ] Task: Update Gradle Plugins
-    - [ ] Subtask: Check for updates to `org.springframework.boot`, `io.spring.dependency-management`, and `org.asciidoctor.jvm.convert` plugins.
-    - [ ] Subtask: Apply updates in `build.gradle` files.
-    - [ ] Subtask: Verify build stability.
+- [x] Task: Update Gradle Plugins 64739d1
+    - [x] Subtask: Check for updates to `org.springframework.boot`, `io.spring.dependency-management`, and `org.asciidoctor.jvm.convert` plugins.
+    - [x] Subtask: Apply updates in `build.gradle` files.
+    - [x] Subtask: Verify build stability.
 
 ## Phase 2: Core Framework Upgrade
 - [ ] Task: Upgrade Spring Boot Version
