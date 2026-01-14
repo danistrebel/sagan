@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import sagan.site.support.StaticPagePathFinder;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.ResourcePatternResolver;
@@ -17,18 +18,18 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class MvcConfig implements WebMvcConfigurer {
 
-	private StaticPagePathFinder staticPagePathFinder;
+	@Autowired
+	private ResourcePatternResolver resourcePatternResolver;
 
 	@Bean
-	public StaticPagePathFinder staticPagePathFinder(ResourcePatternResolver resourcePatternResolver) {
-		this.staticPagePathFinder = new StaticPagePathFinder(resourcePatternResolver);
-		return this.staticPagePathFinder;
+	public StaticPagePathFinder staticPagePathFinder() {
+		return new StaticPagePathFinder(this.resourcePatternResolver);
 	}
 
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
 		try {
-			for (StaticPagePathFinder.PagePaths paths : staticPagePathFinder.findPaths()) {
+			for (StaticPagePathFinder.PagePaths paths : staticPagePathFinder().findPaths()) {
 				String urlPath = paths.getUrlPath();
 				registry.addViewController(urlPath).setViewName("pages" + paths.getFilePath());
 				if (!urlPath.isEmpty()) {

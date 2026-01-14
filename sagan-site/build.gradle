@@ -20,6 +20,13 @@ configurations {
 	runtimeClasspath {
 		extendsFrom developmentOnly
 	}
+    all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            if (details.requested.group == 'org.slf4j' && details.requested.name == 'slf4j-api') {
+                details.useVersion '2.0.9'
+            }
+        }
+    }
 }
 
 repositories {
@@ -45,6 +52,7 @@ dependencies {
 	implementation 'org.springframework.security:spring-security-oauth2-client'
 	implementation 'org.springframework.security:spring-security-oauth2-jose'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'ch.qos.logback:logback-classic'
 
 	// for use in on-the-fly database setup and migrations
 	implementation 'org.flywaydb:flyway-core'
@@ -83,7 +91,7 @@ dependencies {
 	}
 	testImplementation 'org.springframework.security:spring-security-test'
 	testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
-	testImplementation(platform("org.springframework.cloud:spring-cloud-contract-dependencies:3.0.4"))
+	testImplementation(platform("org.springframework.cloud:spring-cloud-contract-dependencies:4.1.0"))
 	testImplementation 'org.springframework.cloud:spring-cloud-starter-contract-stub-runner'
 }
 

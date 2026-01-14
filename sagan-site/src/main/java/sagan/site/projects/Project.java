@@ -27,8 +27,8 @@ import jakarta.persistence.NamedAttributeNode;
 import jakarta.persistence.NamedEntityGraph;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OrderBy;
+import jakarta.persistence.ElementCollection;
 
-import org.hibernate.annotations.SortNatural;
 import sagan.site.projects.support.SupportPolicy;
 import sagan.site.projects.support.SupportStatus;
 
@@ -95,7 +95,7 @@ public class Project {
 	 * Set of available {@link Release} sorted by their version
 	 */
 	@OneToMany(mappedBy = "project", cascade = CascadeType.ALL, orphanRemoval = true)
-	@SortNatural
+	@OrderBy("version DESC")
 	private SortedSet<Release> releases = new TreeSet<>();
 
 	/**
@@ -146,7 +146,7 @@ public class Project {
 	 * List of {@link ProjectSample sample applications}
 	 */
 	@OneToMany(mappedBy = "project", cascade = CascadeType.ALL, orphanRemoval = true)
-	@SortNatural
+	@OrderBy("id ASC")
 	private SortedSet<ProjectSample> samples = new TreeSet<>();
 
 	/**

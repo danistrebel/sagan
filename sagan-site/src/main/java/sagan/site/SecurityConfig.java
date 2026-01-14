@@ -1,5 +1,6 @@
 package sagan.site;
 
+import java.util.Collections;
 import java.util.LinkedHashMap;
 
 import jakarta.servlet.Filter;
@@ -12,6 +13,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationEventPublisher;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.DefaultAuthenticationEventPublisher;
+import org.springframework.security.authentication.ProviderManager;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserService;
@@ -31,13 +33,11 @@ public class SecurityConfig {
 	@Autowired
 	private OAuth2UserService<OAuth2UserRequest, OAuth2User> userService;
 
-	@Autowired
-	private AuthenticationManager manager;
-
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+		AuthenticationManager authenticationManager = new ProviderManager(Collections.emptyList());
 		http
-				.addFilterAfter(githubBasicAuthFilter(), BasicAuthenticationFilter.class)
+				.addFilterAfter(new BasicAuthenticationFilter(authenticationManager), BasicAuthenticationFilter.class)
 				.exceptionHandling(handling -> handling.authenticationEntryPoint(entryPoint()))
 				.csrf(csrf -> csrf.ignoringRequestMatchers("/api/**", "/webhook/**"))
 				.requiresChannel(channel ->
@@ -59,10 +59,6 @@ public class SecurityConfig {
 	public AuthenticationEventPublisher authenticationEventPublisher
 			(ApplicationEventPublisher applicationEventPublisher) {
 		return new DefaultAuthenticationEventPublisher(applicationEventPublisher);
-	}
-
-	private Filter githubBasicAuthFilter() {
-		return new BasicAuthenticationFilter(this.manager);
 	}
 
 	private AuthenticationEntryPoint entryPoint() {
