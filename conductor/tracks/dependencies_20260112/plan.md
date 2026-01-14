@@ -11,10 +11,10 @@
     - [x] Subtask: Verify build stability.
 
 ## Phase 2: Core Framework Upgrade
-- [~] Task: Upgrade Spring Boot Version
-    - [ ] Subtask: Update the Spring Boot version in the root `build.gradle` or `settings.gradle`.
-    - [ ] Subtask: Resolve any immediate dependency conflicts reported by Gradle.
-    - [ ] Subtask: Fix compilation errors resulting from removed or deprecated APIs.
+- [x] Task: Upgrade Spring Boot Version b014424
+    - [x] Subtask: Update the Spring Boot version in the root `build.gradle` or `settings.gradle`.
+    - [x] Subtask: Resolve any immediate dependency conflicts reported by Gradle.
+    - [x] Subtask: Fix compilation errors resulting from removed or deprecated APIs.
 - [ ] Task: Verify Application Context
     - [ ] Subtask: Run integration tests to ensure the Spring Application Context loads successfully.
     - [ ] Subtask: Address any configuration property changes (check `application.properties` or `application.yml`).
