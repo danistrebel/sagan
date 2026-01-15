@@ -35,9 +35,7 @@ public class SecurityConfig {
 
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-		AuthenticationManager authenticationManager = new ProviderManager(Collections.emptyList());
 		http
-				.addFilterAfter(new BasicAuthenticationFilter(authenticationManager), BasicAuthenticationFilter.class)
 				.exceptionHandling(handling -> handling.authenticationEntryPoint(entryPoint()))
 				.csrf(csrf -> csrf.ignoringRequestMatchers("/api/**", "/webhook/**"))
 				.requiresChannel(channel ->

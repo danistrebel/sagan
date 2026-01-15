@@ -3,6 +3,9 @@ info:
     profiles: ${spring.profiles.active:default}
 
 spring:
+  threads:
+    virtual:
+      enabled: true
   jpa:
     hibernate:
       ddl_auto: none
