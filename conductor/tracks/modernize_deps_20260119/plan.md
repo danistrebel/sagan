@@ -28,7 +28,7 @@
     - [x] Sub-task: Implement the indicator to check Redis connection.
 - [x] Task: specific - Implement GitHub API Health Indicator (if applicable).
     - [x] Sub-task: Check if `sagan-site` calls GitHub. If so, add health check.
-- [~] Task: Conductor - User Manual Verification 'Observability Enhancements' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Observability Enhancements' (Protocol in workflow.md) [checkpoint: 9acd353]
 
 ## Phase 4: Final Verification
 - [ ] Task: specific - Full System Regression Test.
