@@ -2,12 +2,13 @@
 
 ## Backend
 - **Language:** Java 11
-- **Framework:** Spring Boot (2.5.14)
+- **Framework:** Spring Boot (2.7.18)
 - **Data Access:** Spring Data JPA, Hibernate
 - **Security:** Spring Security (OAuth2 Client, JOSE)
 - **API Style:** Spring HATEOAS
 - **Caching/Data Store:** Redis
 - **Validation:** Spring Boot Starter Validation
+- **Observability:** Spring Boot Actuator, Micrometer (Prometheus)
 
 ## Frontend
 - **Language:** JavaScript
