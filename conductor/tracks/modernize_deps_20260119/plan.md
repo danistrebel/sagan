@@ -31,7 +31,7 @@
 - [x] Task: Conductor - User Manual Verification 'Observability Enhancements' (Protocol in workflow.md) [checkpoint: 9acd353]
 
 ## Phase 4: Final Verification
-- [ ] Task: specific - Full System Regression Test.
-    - [ ] Sub-task: Run full build `./gradlew clean build`.
+- [~] Task: specific - Full System Regression Test.
+    - [x] Sub-task: Run full build `./gradlew clean build`.
     - [ ] Sub-task: Launch application locally and verify UI pages (Blog, Guides).
-- [ ] Task: Conductor - User Manual Verification 'Final Verification' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Final Verification' (Protocol in workflow.md) [checkpoint: 0e1025a]
