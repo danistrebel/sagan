@@ -2,6 +2,7 @@ package sagan.site;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.AuthenticationServiceException;
 import org.springframework.security.core.Authentication;
@@ -16,11 +17,13 @@ import org.springframework.security.oauth2.core.user.OAuth2User;
 public class TestSecurityConfig {
 
 	@Bean
+	@Primary
 	public AuthenticationManager testAuthenticationManager() {
 		return new TestAuthenticationManager();
 	}
 
 	@Bean
+	@Primary
 	public OAuth2UserService<OAuth2UserRequest, OAuth2User> testOAuth2UserService() {
 		return new TestOAuth2UserService();
 	}

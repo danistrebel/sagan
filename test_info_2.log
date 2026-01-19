@@ -1,0 +1,682 @@
+Initialized native services in: /home/user/.gradle/native
+Initialized jansi services in: /home/user/.gradle/native
+Found daemon DaemonInfo{pid=121877, address=[2f83aebc-1a61-4963-80ef-8a3d0f910bc2 port:34303, addresses:[/127.0.0.1]], state=Idle, lastBusy=1768827293667, context=DefaultDaemonContext[uid=08dc5845-4136-4069-97c4-1a630e668aa4,javaHome=/usr/lib/jvm/temurin-25-jdk-amd64,daemonRegistryDir=/home/user/.gradle/daemon,pid=121877,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+Java home is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=/usr/lib/jvm/temurin-17-jdk-amd64,daemonRegistryDir=/home/user/.gradle/daemon,pid=148172,idleTimeout=null,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+Actual: DefaultDaemonContext[uid=08dc5845-4136-4069-97c4-1a630e668aa4,javaHome=/usr/lib/jvm/temurin-25-jdk-amd64,daemonRegistryDir=/home/user/.gradle/daemon,pid=121877,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+Found daemon DaemonInfo{pid=138476, address=[6c439b95-dc9e-4fb7-b405-8f817c1ada51 port:42299, addresses:[/127.0.0.1]], state=Idle, lastBusy=1768828758991, context=DefaultDaemonContext[uid=a70f43f7-ee57-4d1b-81e2-07ba01446da3,javaHome=/home/user/.codeoss-cloudworkstations/extensions/redhat.java-1.50.0-linux-x64/jre/21.0.9-linux-x86_64,daemonRegistryDir=/home/user/.gradle/daemon,pid=138476,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+Java home is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=/usr/lib/jvm/temurin-17-jdk-amd64,daemonRegistryDir=/home/user/.gradle/daemon,pid=148172,idleTimeout=null,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+Actual: DefaultDaemonContext[uid=a70f43f7-ee57-4d1b-81e2-07ba01446da3,javaHome=/home/user/.codeoss-cloudworkstations/extensions/redhat.java-1.50.0-linux-x64/jre/21.0.9-linux-x86_64,daemonRegistryDir=/home/user/.gradle/daemon,pid=138476,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+Found daemon DaemonInfo{pid=139050, address=[1ea7af5e-7582-43d8-9f57-e014818dc003 port:40581, addresses:[/127.0.0.1]], state=Idle, lastBusy=1768828773801, context=DefaultDaemonContext[uid=b8dc45dd-1193-42e9-bbd0-c7c0768c83b5,javaHome=/home/user/.codeoss-cloudworkstations/extensions/redhat.java-1.50.0-linux-x64/jre/21.0.9-linux-x86_64,daemonRegistryDir=/home/user/.gradle/daemon,pid=139050,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+Java home is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=/usr/lib/jvm/temurin-17-jdk-amd64,daemonRegistryDir=/home/user/.gradle/daemon,pid=148172,idleTimeout=null,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+Actual: DefaultDaemonContext[uid=b8dc45dd-1193-42e9-bbd0-c7c0768c83b5,javaHome=/home/user/.codeoss-cloudworkstations/extensions/redhat.java-1.50.0-linux-x64/jre/21.0.9-linux-x86_64,daemonRegistryDir=/home/user/.gradle/daemon,pid=139050,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 122976). The daemon log file: /home/user/.gradle/daemon/7.3.1/daemon-122976.out.log
+Starting 20th build in daemon [uptime: 38 mins 0.966 secs, performance: 100%, non-heap usage: 45% of 256 MiB]
+Using 4 worker leases.
+Not watching /home/user/sagan since the file system is not supported
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file '/home/user/sagan/settings.gradle'.
+Projects loaded. Root project using build file '/home/user/sagan/build.gradle'.
+Included projects: [root project 'sagan', project ':sagan-client', project ':sagan-renderer', project ':sagan-site']
+
+> Configure project :
+Evaluating root project 'sagan' using build file '/home/user/sagan/build.gradle'.
+
+> Configure project :sagan-client
+Evaluating project ':sagan-client' using build file '/home/user/sagan/sagan-client/build.gradle'.
+
+> Configure project :sagan-renderer
+Evaluating project ':sagan-renderer' using build file '/home/user/sagan/sagan-renderer/build.gradle'.
+Applying dependency management to configuration 'bootArchives' in project 'sagan-renderer'
+Applying dependency management to configuration 'archives' in project 'sagan-renderer'
+Applying dependency management to configuration 'default' in project 'sagan-renderer'
+Applying dependency management to configuration 'implementation' in project 'sagan-renderer'
+Applying dependency management to configuration 'compileOnly' in project 'sagan-renderer'
+Applying dependency management to configuration 'compileClasspath' in project 'sagan-renderer'
+Applying dependency management to configuration 'annotationProcessor' in project 'sagan-renderer'
+Applying dependency management to configuration 'runtimeOnly' in project 'sagan-renderer'
+Applying dependency management to configuration 'runtimeClasspath' in project 'sagan-renderer'
+Applying dependency management to configuration 'testImplementation' in project 'sagan-renderer'
+Applying dependency management to configuration 'testCompileOnly' in project 'sagan-renderer'
+Applying dependency management to configuration 'testCompileClasspath' in project 'sagan-renderer'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'sagan-renderer'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'sagan-renderer'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'sagan-renderer'
+Applying dependency management to configuration 'apiElements' in project 'sagan-renderer'
+Applying dependency management to configuration 'runtimeElements' in project 'sagan-renderer'
+Applying dependency management to configuration 'developmentOnly' in project 'sagan-renderer'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'sagan-renderer'
+
+> Configure project :sagan-site
+Evaluating project ':sagan-site' using build file '/home/user/sagan/sagan-site/build.gradle'.
+Applying dependency management to configuration 'annotationProcessor' in project 'sagan-site'
+Applying dependency management to configuration 'apiElements' in project 'sagan-site'
+Applying dependency management to configuration 'archives' in project 'sagan-site'
+Applying dependency management to configuration 'bootArchives' in project 'sagan-site'
+Applying dependency management to configuration 'compileClasspath' in project 'sagan-site'
+Applying dependency management to configuration 'compileOnly' in project 'sagan-site'
+Applying dependency management to configuration 'default' in project 'sagan-site'
+Applying dependency management to configuration 'developmentOnly' in project 'sagan-site'
+Applying dependency management to configuration 'implementation' in project 'sagan-site'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'sagan-site'
+Applying dependency management to configuration 'runtimeClasspath' in project 'sagan-site'
+Applying dependency management to configuration 'runtimeElements' in project 'sagan-site'
+Applying dependency management to configuration 'runtimeOnly' in project 'sagan-site'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'sagan-site'
+Applying dependency management to configuration 'testCompileClasspath' in project 'sagan-site'
+Applying dependency management to configuration 'testCompileOnly' in project 'sagan-site'
+Applying dependency management to configuration 'testImplementation' in project 'sagan-site'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'sagan-site'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'sagan-site'
+All projects evaluated.
+Selected primary task ':sagan-site:test' from project :sagan-site
+Tasks to be executed: [task ':sagan-client:compileJava', task ':sagan-client:processResources', task ':sagan-client:classes', task ':sagan-client:nodeSetup', task ':sagan-client:npmSetup', task ':sagan-client:npmInstall', task ':sagan-client:npmRunBuild', task ':sagan-client:jar', task ':sagan-site:compileJava', task ':sagan-site:generateGitProperties', task ':sagan-site:processResources', task ':sagan-site:classes', task ':sagan-site:compileTestJava', task ':sagan-site:processTestResources', task ':sagan-site:testClasses', task ':sagan-site:test']
+Tasks that were excluded: []
+:sagan-client:compileJava (Thread[Execution worker for ':',5,main]) started.
+
+> Task :sagan-client:compileJava NO-SOURCE
+file or directory '/home/user/sagan/sagan-client/src/main/java', not found
+Skipping task ':sagan-client:compileJava' as it has no source files and no previous output files.
+:sagan-client:compileJava (Thread[Execution worker for ':',5,main]) completed. Took 0.006 secs.
+:sagan-client:processResources (Thread[Execution worker for ':',5,main]) started.
+
+> Task :sagan-client:processResources NO-SOURCE
+file or directory '/home/user/sagan/sagan-client/src/main/resources', not found
+Skipping task ':sagan-client:processResources' as it has no source files and no previous output files.
+:sagan-client:processResources (Thread[Execution worker for ':',5,main]) completed. Took 0.0 secs.
+:sagan-client:classes (Thread[Execution worker for ':',5,main]) started.
+
+> Task :sagan-client:classes UP-TO-DATE
+Skipping task ':sagan-client:classes' as it has no actions.
+:sagan-client:classes (Thread[Execution worker for ':',5,main]) completed. Took 0.0 secs.
+:sagan-client:nodeSetup (Thread[Execution worker for ':',5,main]) started.
+
+> Task :sagan-client:nodeSetup UP-TO-DATE
+Caching disabled for task ':sagan-client:nodeSetup' because:
+  Build cache is disabled
+Skipping task ':sagan-client:nodeSetup' as it is up-to-date.
+:sagan-client:nodeSetup (Thread[Execution worker for ':',5,main]) completed. Took 0.128 secs.
+:sagan-client:npmSetup (Thread[Execution worker for ':',5,main]) started.
+
+> Task :sagan-client:npmSetup UP-TO-DATE
+Caching disabled for task ':sagan-client:npmSetup' because:
+  Build cache is disabled
+Skipping task ':sagan-client:npmSetup' as it is up-to-date.
+:sagan-client:npmSetup (Thread[Execution worker for ':',5,main]) completed. Took 0.099 secs.
+:sagan-client:npmInstall (Thread[Execution worker for ':',5,main]) started.
+
+> Task :sagan-client:npmInstall UP-TO-DATE
+Caching disabled for task ':sagan-client:npmInstall' because:
+  Build cache is disabled
+Skipping task ':sagan-client:npmInstall' as it is up-to-date.
+:sagan-client:npmInstall (Thread[Execution worker for ':',5,main]) completed. Took 0.352 secs.
+:sagan-client:npmRunBuild (Thread[Execution worker for ':',5,main]) started.
+
+> Task :sagan-client:npmRunBuild UP-TO-DATE
+Caching disabled for task ':sagan-client:npmRunBuild' because:
+  Build cache is disabled
+Skipping task ':sagan-client:npmRunBuild' as it is up-to-date.
+:sagan-client:npmRunBuild (Thread[Execution worker for ':',5,main]) completed. Took 0.008 secs.
+:sagan-client:jar (Thread[Execution worker for ':',5,main]) started.
+
+> Task :sagan-client:jar UP-TO-DATE
+file or directory '/home/user/sagan/sagan-client/build/classes/java/main', not found
+file or directory '/home/user/sagan/sagan-client/build/resources/main', not found
+Caching disabled for task ':sagan-client:jar' because:
+  Build cache is disabled
+Skipping task ':sagan-client:jar' as it is up-to-date.
+:sagan-client:jar (Thread[Execution worker for ':',5,main]) completed. Took 0.004 secs.
+:sagan-site:compileJava (Thread[Execution worker for ':',5,main]) started.
+
+> Task :sagan-site:compileJava UP-TO-DATE
+Resolving global dependency management for project 'sagan-site'
+Excluding [org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec]
+Excluding []
+Caching disabled for task ':sagan-site:compileJava' because:
+  Build cache is disabled
+Skipping task ':sagan-site:compileJava' as it is up-to-date.
+:sagan-site:compileJava (Thread[Execution worker for ':',5,main]) completed. Took 0.805 secs.
+:sagan-site:generateGitProperties (Thread[Execution worker for ':' Thread 3,5,main]) started.
+
+> Task :sagan-site:generateGitProperties UP-TO-DATE
+dotGitDirectory = [/home/user/sagan/.git]
+Caching disabled for task ':sagan-site:generateGitProperties' because:
+  Build cache is disabled
+Skipping task ':sagan-site:generateGitProperties' as it is up-to-date.
+:sagan-site:generateGitProperties (Thread[Execution worker for ':' Thread 3,5,main]) completed. Took 0.194 secs.
+:sagan-site:processResources (Thread[Daemon worker Thread 8,5,main]) started.
+
+> Task :sagan-site:processResources UP-TO-DATE
+Caching disabled for task ':sagan-site:processResources' because:
+  Build cache is disabled
+Skipping task ':sagan-site:processResources' as it is up-to-date.
+:sagan-site:processResources (Thread[Daemon worker Thread 8,5,main]) completed. Took 0.009 secs.
+:sagan-site:classes (Thread[Execution worker for ':' Thread 3,5,main]) started.
+
+> Task :sagan-site:classes UP-TO-DATE
+Skipping task ':sagan-site:classes' as it has no actions.
+:sagan-site:classes (Thread[Execution worker for ':' Thread 3,5,main]) completed. Took 0.0 secs.
+:sagan-site:compileTestJava (Thread[Execution worker for ':' Thread 3,5,main]) started.
+
+> Task :sagan-site:compileTestJava UP-TO-DATE
+Excluding []
+Excluding []
+Caching disabled for task ':sagan-site:compileTestJava' because:
+  Build cache is disabled
+Skipping task ':sagan-site:compileTestJava' as it is up-to-date.
+:sagan-site:compileTestJava (Thread[Execution worker for ':' Thread 3,5,main]) completed. Took 0.986 secs.
+:sagan-site:processTestResources (Thread[Daemon worker Thread 8,5,main]) started.
+
+> Task :sagan-site:processTestResources UP-TO-DATE
+Caching disabled for task ':sagan-site:processTestResources' because:
+  Build cache is disabled
+Skipping task ':sagan-site:processTestResources' as it is up-to-date.
+:sagan-site:processTestResources (Thread[Daemon worker Thread 8,5,main]) completed. Took 0.004 secs.
+:sagan-site:testClasses (Thread[Execution worker for ':' Thread 2,5,main]) started.
+
+> Task :sagan-site:testClasses UP-TO-DATE
+Skipping task ':sagan-site:testClasses' as it has no actions.
+:sagan-site:testClasses (Thread[Execution worker for ':' Thread 2,5,main]) completed. Took 0.0 secs.
+:sagan-site:test (Thread[Execution worker for ':' Thread 2,5,main]) started.
+Gradle Test Executor 14 started executing tests.
+
+> Task :sagan-site:test
+Excluding []
+Caching disabled for task ':sagan-site:test' because:
+  Build cache is disabled
+Task ':sagan-site:test' is not up-to-date because:
+  Task has failed previously.
+Starting process 'Gradle Test Executor 14'. Working directory: /home/user/sagan/sagan-site Command: /usr/lib/jvm/temurin-17-jdk-amd64/bin/java -Dorg.gradle.internal.worker.tmpdir=/home/user/sagan/sagan-site/build/tmp/test/work -Dorg.gradle.native=false @/home/user/.gradle/.tmp/gradle-worker-classpath1753536115921195894txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 14'
+Successfully started process 'Gradle Test Executor 14'
+
+ContextLoadTests STANDARD_OUT
+    13:33:27.917 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+    13:33:27.937 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+    13:33:27.998 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [sagan.site.ContextLoadTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+    13:33:28.015 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [sagan.site.ContextLoadTests], using SpringBootContextLoader
+    13:33:28.021 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [sagan.site.ContextLoadTests]: class path resource [sagan/site/ContextLoadTests-context.xml] does not exist
+    13:33:28.022 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [sagan.site.ContextLoadTests]: class path resource [sagan/site/ContextLoadTestsContext.groovy] does not exist
+    13:33:28.023 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [sagan.site.ContextLoadTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+    13:33:28.024 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [sagan.site.ContextLoadTests]: ContextLoadTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    13:33:28.215 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/user/sagan/sagan-site/build/classes/java/main/sagan/site/SiteApplication.class]
+    13:33:28.222 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration sagan.site.SiteApplication for test class sagan.site.ContextLoadTests
+    13:33:28.368 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [sagan.site.ContextLoadTests]: using defaults.
+    13:33:28.370 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener, org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+    13:33:28.406 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@63c5efee, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2d10e0b1, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1c98290c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@172ca72b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5bda80bf, org.springframework.test.context.support.DirtiesContextTestExecutionListener@71e5f61d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2ce86164, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5e8f9e2d, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@51df223b, org.springframework.test.context.event.EventPublishingTestExecutionListener@fd46303, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@60d8c0dc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4204541c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6a62689d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4602c2a9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@60fa3495, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3e2822, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@79e18e38, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener@29a60c27, org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener@1849db1a]
+    13:33:28.411 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1255b1d1 testClass = ContextLoadTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@464649c testClass = ContextLoadTests, locations = '{}', classes = '{class sagan.site.SiteApplication}', contextInitializerClasses = '[]', activeProfiles = '{standalone}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@74f5ce22, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@525575, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@53dbe163, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6d1ef78d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@71529963, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@16a0ee18], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::               (v2.7.18)
+
+    2026-01-19 13:33:29.203  INFO 148323 --- [    Test worker] sagan.site.ContextLoadTests              : Starting ContextLoadTests using Java 17.0.17 on demos with PID 148323 (started by user in /home/user/sagan/sagan-site)
+    2026-01-19 13:33:29.209  INFO 148323 --- [    Test worker] sagan.site.ContextLoadTests              : The following 1 profile is active: "standalone"
+    2026-01-19 13:33:32.032  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+    2026-01-19 13:33:32.035  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2026-01-19 13:33:32.363  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 313 ms. Found 6 JPA repository interfaces.
+    2026-01-19 13:33:32.391  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+    2026-01-19 13:33:32.394  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+    2026-01-19 13:33:32.426  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.blog.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:32.430  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.projects.ProjectGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:32.433  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.projects.ProjectRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:32.435  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.projects.ReleaseRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:32.436  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.team.support.TeamRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:32.436  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.tools.SpringToolsPlatformRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:32.437  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+    2026-01-19 13:33:34.047  INFO 148323 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+    2026-01-19 13:33:34.048  INFO 148323 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+    2026-01-19 13:33:34.048  INFO 148323 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : 
+    2026-01-19 13:33:34.065  INFO 148323 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+    2026-01-19 13:33:34.437  INFO 148323 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+    2026-01-19 13:33:34.460  INFO 148323 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:sagan (H2 2.1)
+    2026-01-19 13:33:34.515  WARN 148323 --- [    Test worker] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+    2026-01-19 13:33:34.559  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 8 migrations (execution time 00:00.029s)
+    2026-01-19 13:33:34.571  INFO 148323 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+    2026-01-19 13:33:34.635  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+    2026-01-19 13:33:34.656  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - initialize"
+    2026-01-19 13:33:34.715  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - projectpages"
+    2026-01-19 13:33:34.790  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - springtools"
+    2026-01-19 13:33:34.816  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - projects"
+    2026-01-19 13:33:34.863  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "5 - project refactoring"
+    2026-01-19 13:33:34.955  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "6 - tools version"
+    2026-01-19 13:33:34.965  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "7 - support policy"
+    2026-01-19 13:33:35.003  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "99 - fixtures"
+    2026-01-19 13:33:35.048  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 8 migrations to schema "public", now at version v99 (execution time 00:00.417s)
+    2026-01-19 13:33:35.298  INFO 148323 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+    2026-01-19 13:33:35.383  INFO 148323 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+    2026-01-19 13:33:35.660  INFO 148323 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+    2026-01-19 13:33:35.879  INFO 148323 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+    2026-01-19 13:33:37.493  INFO 148323 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+    2026-01-19 13:33:37.510  INFO 148323 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+    2026-01-19 13:33:37.713  WARN 148323 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+    2026-01-19 13:33:38.717  WARN 148323 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'manager'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected single matching bean but found 2: testAuthenticationManager,gitHubAuthenticationManager
+    2026-01-19 13:33:38.721  INFO 148323 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+    2026-01-19 13:33:38.727  INFO 148323 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+    2026-01-19 13:33:38.742  INFO 148323 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+    2026-01-19 13:33:38.817  INFO 148323 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+
+    Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+    2026-01-19 13:33:38.864 ERROR 148323 --- [    Test worker] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+    ***************************
+    APPLICATION FAILED TO START
+    ***************************
+
+    Description:
+
+    Field manager in sagan.site.SecurityConfig required a single bean, but 2 were found:
+    	- testAuthenticationManager: defined by method 'testAuthenticationManager' in class path resource [sagan/site/TestSecurityConfig.class]
+    	- gitHubAuthenticationManager: defined by method 'gitHubAuthenticationManager' in class path resource [sagan/site/GitHubSecurityConfig.class]
+
+
+    Action:
+
+    Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::               (v2.7.18)
+
+    2026-01-19 13:33:38.975  INFO 148323 --- [    Test worker] sagan.site.ContextLoadTests              : Starting ContextLoadTests using Java 17.0.17 on demos with PID 148323 (started by user in /home/user/sagan/sagan-site)
+    2026-01-19 13:33:38.976  INFO 148323 --- [    Test worker] sagan.site.ContextLoadTests              : The following 1 profile is active: "standalone"
+    2026-01-19 13:33:39.627  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+    2026-01-19 13:33:39.628  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2026-01-19 13:33:39.686  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 6 JPA repository interfaces.
+    2026-01-19 13:33:39.693  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+    2026-01-19 13:33:39.694  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+    2026-01-19 13:33:39.709  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.blog.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:39.710  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.projects.ProjectGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:39.712  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.projects.ProjectRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:39.713  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.projects.ReleaseRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:39.713  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.team.support.TeamRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:39.714  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.tools.SpringToolsPlatformRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:39.714  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+    2026-01-19 13:33:40.245  INFO 148323 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+    2026-01-19 13:33:40.246  INFO 148323 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+    2026-01-19 13:33:40.246  INFO 148323 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : 
+    2026-01-19 13:33:40.249  INFO 148323 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+    2026-01-19 13:33:40.255  INFO 148323 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+    2026-01-19 13:33:40.256  INFO 148323 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:sagan (H2 2.1)
+    2026-01-19 13:33:40.262  WARN 148323 --- [    Test worker] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+    2026-01-19 13:33:40.274  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 8 migrations (execution time 00:00.009s)
+    2026-01-19 13:33:40.277  INFO 148323 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+    2026-01-19 13:33:40.294  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+    2026-01-19 13:33:40.300  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - initialize"
+    2026-01-19 13:33:40.319  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - projectpages"
+    2026-01-19 13:33:40.351  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - springtools"
+    2026-01-19 13:33:40.365  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - projects"
+    2026-01-19 13:33:40.400  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "5 - project refactoring"
+    2026-01-19 13:33:40.466  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "6 - tools version"
+    2026-01-19 13:33:40.479  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "7 - support policy"
+    2026-01-19 13:33:40.500  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "99 - fixtures"
+    2026-01-19 13:33:40.528  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 8 migrations to schema "public", now at version v99 (execution time 00:00.235s)
+    2026-01-19 13:33:40.648  INFO 148323 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+    2026-01-19 13:33:40.659  INFO 148323 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+    2026-01-19 13:33:41.035  INFO 148323 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+    2026-01-19 13:33:41.035  INFO 148323 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+    2026-01-19 13:33:41.131  WARN 148323 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+    2026-01-19 13:33:41.615  WARN 148323 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'manager'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected single matching bean but found 2: testAuthenticationManager,gitHubAuthenticationManager
+    2026-01-19 13:33:41.616  INFO 148323 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+    2026-01-19 13:33:41.618  INFO 148323 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+    2026-01-19 13:33:41.621  INFO 148323 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+    2026-01-19 13:33:41.636  INFO 148323 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+
+    Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+    2026-01-19 13:33:41.643 ERROR 148323 --- [    Test worker] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+    ***************************
+    APPLICATION FAILED TO START
+    ***************************
+
+    Description:
+
+    Field manager in sagan.site.SecurityConfig required a single bean, but 2 were found:
+    	- testAuthenticationManager: defined by method 'testAuthenticationManager' in class path resource [sagan/site/TestSecurityConfig.class]
+    	- gitHubAuthenticationManager: defined by method 'gitHubAuthenticationManager' in class path resource [sagan/site/GitHubSecurityConfig.class]
+
+
+    Action:
+
+    Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+    2026-01-19 13:33:41.656 ERROR 148323 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@63c5efee] to prepare test instance [sagan.site.ContextLoadTests@56554e7]
+
+    java.lang.IllegalStateException: Failed to load ApplicationContext
+    	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.31.jar:5.3.31]
+    	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.31.jar:5.3.31]
+    	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.31.jar:5.3.31]
+    	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.31.jar:5.3.31]
+    	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.31.jar:5.3.31]
+    	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.31.jar:5.3.31]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+    	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+    	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+    	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+    	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+    	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+    	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+    	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+    	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+    	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+    	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+    	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+    	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+    	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+    	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+    	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108) ~[na:na]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[na:na]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[na:na]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[na:na]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[na:na]
+    	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96) ~[na:na]
+    	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61) ~[na:na]
+    	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+    	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+    	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+    	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+    	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+    	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+    	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+    	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+    	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
+    	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+    	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133) ~[na:na]
+    	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71) ~[na:na]
+    	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+    	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+    Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'manager'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected single matching bean but found 2: testAuthenticationManager,gitHubAuthenticationManager
+    	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:713) ~[spring-beans-5.3.31.jar:5.3.31]
+    	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:693) ~[spring-beans-5.3.31.jar:5.3.31]
+    	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.31.jar:5.3.31]
+    	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:408) ~[spring-beans-5.3.31.jar:5.3.31]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.31.jar:5.3.31]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.31.jar:5.3.31]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.31.jar:5.3.31]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.31.jar:5.3.31]
+    	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.31.jar:5.3.31]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.31.jar:5.3.31]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.31.jar:5.3.31]
+    	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.31.jar:5.3.31]
+    	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:929) ~[spring-context-5.3.31.jar:5.3.31]
+    	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) ~[spring-context-5.3.31.jar:5.3.31]
+    	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.7.18.jar:2.7.18]
+    	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409) ~[spring-boot-2.7.18.jar:2.7.18]
+    	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.18.jar:2.7.18]
+    	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136) ~[spring-boot-test-2.7.18.jar:2.7.18]
+    	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.31.jar:5.3.31]
+    	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.31.jar:5.3.31]
+    	... 85 common frames omitted
+    Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected single matching bean but found 2: testAuthenticationManager,gitHubAuthenticationManager
+    	at org.springframework.beans.factory.config.DependencyDescriptor.resolveNotUnique(DependencyDescriptor.java:220) ~[spring-beans-5.3.31.jar:5.3.31]
+    	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1369) ~[spring-beans-5.3.31.jar:5.3.31]
+    	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.31.jar:5.3.31]
+    	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:710) ~[spring-beans-5.3.31.jar:5.3.31]
+    	... 104 common frames omitted
+
+
+ContextLoadTests > contextLoads() FAILED
+    java.lang.IllegalStateException: Failed to load ApplicationContext
+        at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
+        at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+        at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+        at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+        at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+        at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+        at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+        at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+        at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+        at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+        at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+        at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+        at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+        at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+        at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+        at java.base/java.util.Optional.orElseGet(Optional.java:364)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+        at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+        at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+        at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+        at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+        at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+        at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+        at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+        at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+        at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+        at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+        Caused by:
+        org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'manager'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected single matching bean but found 2: testAuthenticationManager,gitHubAuthenticationManager
+            at app//org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:713)
+            at app//org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:693)
+            at app//org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+            at app//org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:408)
+            at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+            at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+            at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+            at app//org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+            at app//org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+            at app//org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+            at app//org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+            at app//org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+            at app//org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:929)
+            at app//org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
+            at app//org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+            at app//org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
+            at app//org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+            at app//org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+            at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+            at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+            ... 85 more
+
+            Caused by:
+            org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected single matching bean but found 2: testAuthenticationManager,gitHubAuthenticationManager
+                at app//org.springframework.beans.factory.config.DependencyDescriptor.resolveNotUnique(DependencyDescriptor.java:220)
+                at app//org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1369)
+                at app//org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+                at app//org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:710)
+                ... 104 more
+
+ContextLoadTests STANDARD_OUT
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::               (v2.7.18)
+
+    2026-01-19 13:33:41.764  INFO 148323 --- [    Test worker] sagan.site.ContextLoadTests              : Starting ContextLoadTests using Java 17.0.17 on demos with PID 148323 (started by user in /home/user/sagan/sagan-site)
+    2026-01-19 13:33:41.764  INFO 148323 --- [    Test worker] sagan.site.ContextLoadTests              : The following 1 profile is active: "standalone"
+    2026-01-19 13:33:42.455  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+    2026-01-19 13:33:42.455  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2026-01-19 13:33:42.499  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 6 JPA repository interfaces.
+    2026-01-19 13:33:42.505  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+    2026-01-19 13:33:42.506  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+    2026-01-19 13:33:42.516  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.blog.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:42.517  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.projects.ProjectGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:42.518  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.projects.ProjectRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:42.519  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.projects.ReleaseRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:42.519  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.team.support.TeamRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:42.520  INFO 148323 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sagan.site.tools.SpringToolsPlatformRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+    2026-01-19 13:33:42.520  INFO 148323 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+    2026-01-19 13:33:42.975  INFO 148323 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+    2026-01-19 13:33:42.976  INFO 148323 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+    2026-01-19 13:33:42.976  INFO 148323 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : 
+    2026-01-19 13:33:42.979  INFO 148323 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+    2026-01-19 13:33:42.984  INFO 148323 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+    2026-01-19 13:33:42.987  INFO 148323 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:sagan (H2 2.1)
+    2026-01-19 13:33:42.993  WARN 148323 --- [    Test worker] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+    2026-01-19 13:33:43.003  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 8 migrations (execution time 00:00.008s)
+    2026-01-19 13:33:43.006  INFO 148323 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+    2026-01-19 13:33:43.015  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+    2026-01-19 13:33:43.022  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - initialize"
+    2026-01-19 13:33:43.038  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - projectpages"
+    2026-01-19 13:33:43.065  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - springtools"
+    2026-01-19 13:33:43.074  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - projects"
+    2026-01-19 13:33:43.096  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "5 - project refactoring"
+    2026-01-19 13:33:43.158  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "6 - tools version"
+    2026-01-19 13:33:43.181  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "7 - support policy"
+    2026-01-19 13:33:43.220  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "99 - fixtures"
+    2026-01-19 13:33:43.254  INFO 148323 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 8 migrations to schema "public", now at version v99 (execution time 00:00.240s)
+    2026-01-19 13:33:43.371  INFO 148323 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+    2026-01-19 13:33:43.388  INFO 148323 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+    2026-01-19 13:33:43.938  INFO 148323 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+    2026-01-19 13:33:43.939  INFO 148323 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+    2026-01-19 13:33:44.048  WARN 148323 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+    2026-01-19 13:33:44.474  WARN 148323 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'manager'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected single matching bean but found 2: testAuthenticationManager,gitHubAuthenticationManager
+    2026-01-19 13:33:44.475  INFO 148323 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+    2026-01-19 13:33:44.476  INFO 148323 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+    2026-01-19 13:33:44.483  INFO 148323 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+    2026-01-19 13:33:44.491  INFO 148323 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+
+    Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+    2026-01-19 13:33:44.495 ERROR 148323 --- [    Test worker] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+    ***************************
+    APPLICATION FAILED TO START
+    ***************************
+
+    Description:
+
+    Field manager in sagan.site.SecurityConfig required a single bean, but 2 were found:
+    	- testAuthenticationManager: defined by method 'testAuthenticationManager' in class path resource [sagan/site/TestSecurityConfig.class]
+    	- gitHubAuthenticationManager: defined by method 'gitHubAuthenticationManager' in class path resource [sagan/site/GitHubSecurityConfig.class]
+
+
+    Action:
+
+    Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+
+Gradle Test Executor 14 finished executing tests.
+
+> Task :sagan-site:test FAILED
+Finished generating test XML results (0.004 secs) into: /home/user/sagan/sagan-site/build/test-results/test
+Generating HTML test report...
+Finished generating test html results (0.005 secs) into: /home/user/sagan/sagan-site/build/reports/tests/test
+:sagan-site:test (Thread[Execution worker for ':' Thread 2,5,main]) completed. Took 18.652 secs.
+11 actionable tasks: 1 executed, 10 up-to-date
+Some of the file system contents retained in the virtual file system are on file systems that Gradle doesn't support watching. The relevant state was discarded to ensure changes to these locations are properly detected. You can override this by explicitly enabling file system watching.

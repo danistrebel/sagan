@@ -1,7 +1,7 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '2.5.14'
-	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'org.springframework.boot' version '2.7.18'
+	id 'io.spring.dependency-management' version '1.1.0'
 	id 'org.asciidoctor.jvm.convert' version '3.3.2'
 	id 'com.gorylenko.gradle-git-properties' version '2.4.1'
 	id 'com.github.ben-manes.versions' version '0.42.0'
@@ -50,6 +50,7 @@ dependencies {
 
 	// for use in on-the-fly database setup and migrations
 	implementation 'org.flywaydb:flyway-core'
+	implementation 'org.flywaydb:flyway-mysql'
 	implementation 'org.apache.httpcomponents:httpclient'
 	implementation 'org.modelmapper:modelmapper:2.4.5'
 	implementation 'org.jsoup:jsoup:1.14.3'
@@ -86,7 +87,7 @@ dependencies {
 	}
 	testImplementation 'org.springframework.security:spring-security-test'
 	testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
-	testImplementation(platform("org.springframework.cloud:spring-cloud-contract-dependencies:3.0.4"))
+	testImplementation(platform("org.springframework.cloud:spring-cloud-contract-dependencies:3.1.8"))
 	testImplementation 'org.springframework.cloud:spring-cloud-starter-contract-stub-runner'
 }
 

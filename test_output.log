@@ -1,0 +1,25 @@
+> Task :sagan-client:compileJava NO-SOURCE
+> Task :sagan-client:processResources NO-SOURCE
+> Task :sagan-client:classes UP-TO-DATE
+> Task :sagan-client:nodeSetup UP-TO-DATE
+> Task :sagan-client:npmSetup UP-TO-DATE
+> Task :sagan-client:npmInstall UP-TO-DATE
+> Task :sagan-client:npmRunBuild UP-TO-DATE
+> Task :sagan-client:jar UP-TO-DATE
+> Task :sagan-site:compileJava UP-TO-DATE
+> Task :sagan-site:generateGitProperties UP-TO-DATE
+> Task :sagan-site:processResources UP-TO-DATE
+> Task :sagan-site:classes UP-TO-DATE
+> Task :sagan-site:compileTestJava UP-TO-DATE
+> Task :sagan-site:processTestResources UP-TO-DATE
+> Task :sagan-site:testClasses UP-TO-DATE
+
+> Task :sagan-site:test
+
+ContextLoadTests > contextLoads() FAILED
+    java.lang.IllegalStateException at DefaultCacheAwareContextLoaderDelegate.java:98
+        Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException at AutowiredAnnotationBeanPostProcessor.java:713
+            Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException at DependencyDescriptor.java:220
+
+> Task :sagan-site:test FAILED
+11 actionable tasks: 1 executed, 10 up-to-date

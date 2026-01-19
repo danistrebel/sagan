@@ -9,15 +9,15 @@
 - [x] Task: Conductor - User Manual Verification 'Analysis and Preparation' (Protocol in workflow.md) [checkpoint: 3315328]
 
 ## Phase 2: Core Dependency Updates (Spring Boot 2.7.x)
-- [ ] Task: specific - Bump Spring Boot version to latest 2.7.x in `build.gradle` and `gradle/publications.gradle`.
-    - [ ] Sub-task: Create a reproduction test case that passes on current version.
-    - [ ] Sub-task: Update the version number.
-    - [ ] Sub-task: Fix immediate compilation errors.
-- [ ] Task: specific - Update third-party dependencies to compatible versions.
-    - [ ] Sub-task: Update `sagan-client/package.json` dependencies if needed for build compatibility.
-- [ ] Task: specific - Fix failing unit tests resulting from the upgrade.
-    - [ ] Sub-task: Run `./gradlew test` and address failures one by one.
-- [ ] Task: Conductor - User Manual Verification 'Core Dependency Updates' (Protocol in workflow.md)
+- [~] Task: specific - Bump Spring Boot version to latest 2.7.x in `build.gradle` and `gradle/publications.gradle`.
+    - [x] Sub-task: Create a reproduction test case that passes on current version.
+    - [x] Sub-task: Update the version number.
+    - [x] Sub-task: Fix immediate compilation errors.
+- [x] Task: specific - Update third-party dependencies to compatible versions.
+    - [x] Sub-task: Update `sagan-client/package.json` dependencies if needed for build compatibility.
+- [x] Task: specific - Fix failing unit tests resulting from the upgrade.
+    - [x] Sub-task: Run `./gradlew test` and address failures one by one.
+- [~] Task: Conductor - User Manual Verification 'Core Dependency Updates' (Protocol in workflow.md)
 
 ## Phase 3: Observability Enhancements
 - [ ] Task: specific - Configure Actuator Endpoints.
