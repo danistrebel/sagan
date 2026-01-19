@@ -1,12 +1,12 @@
 # Implementation Plan - Modernize Dependencies and Observability
 
 ## Phase 1: Analysis and Preparation
-- [ ] Task: specific - Analyze current `build.gradle` and identify all major outdated dependencies.
-    - [ ] Sub-task: Run `gradle dependencyUpdates` to get a report.
-    - [ ] Sub-task: List target versions for Spring Boot and key libraries.
-- [ ] Task: specific - Review Spring Boot 2.6 and 2.7 migration guides.
-    - [ ] Sub-task: Note any breaking changes related to configuration or specific modules used (Data, Security).
-- [ ] Task: Conductor - User Manual Verification 'Analysis and Preparation' (Protocol in workflow.md)
+- [x] Task: specific - Analyze current `build.gradle` and identify all major outdated dependencies.
+    - [x] Sub-task: Run `gradle dependencyUpdates` to get a report.
+    - [x] Sub-task: List target versions for Spring Boot and key libraries.
+- [x] Task: specific - Review Spring Boot 2.6 and 2.7 migration guides.
+    - [x] Sub-task: Note any breaking changes related to configuration or specific modules used (Data, Security).
+- [~] Task: Conductor - User Manual Verification 'Analysis and Preparation' (Protocol in workflow.md)
 
 ## Phase 2: Core Dependency Updates (Spring Boot 2.7.x)
 - [ ] Task: specific - Bump Spring Boot version to latest 2.7.x in `build.gradle` and `gradle/publications.gradle`.
