@@ -17,7 +17,7 @@
     - [x] Sub-task: Update `sagan-client/package.json` dependencies if needed for build compatibility.
 - [x] Task: specific - Fix failing unit tests resulting from the upgrade.
     - [x] Sub-task: Run `./gradlew test` and address failures one by one.
-- [~] Task: Conductor - User Manual Verification 'Core Dependency Updates' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Core Dependency Updates' (Protocol in workflow.md) [checkpoint: ec30623]
 
 ## Phase 3: Observability Enhancements
 - [ ] Task: specific - Configure Actuator Endpoints.
